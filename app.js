@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const { MONGO_URI } = require('./keys');
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = 5000 || process.env.PORT;
 
 // Load models
 require('./models/post');
